@@ -1,0 +1,51 @@
+#
+# Template  : air-visual-card-template
+# Card:     : custom:air-visual-card
+# Project   : Home Assistant
+# Repository: https://github.com/AmoebeLabs/Decluttering-Templates
+#
+# Author    : Mars @ AmoebeLabs.com
+# 
+# License   : CC BY-SA, https://creativecommons.org/licenses/by/4.0/
+#
+# -----
+# Description:
+#   Decluttering template for the air visual card.
+#   
+#   References:
+#   - Air visual card: https://github.com/dnguyen800/air-visual-card
+#
+###############################################################################
+
+default:
+  - air_pollution_level: sensor.u_s_air_pollution_level
+  - air_quality_index: sensor.u_s_air_quality_index
+  - main_pollutant: sensor.u_s_main_pollutant      
+  - temp: weather.dark_sky
+
+card:
+  type: 'custom:air-visual-card'
+  style: |
+    ha-card {
+      border-radius: var(--theme-border-radius);
+    }
+    div.grid-container {
+      border-radius: var(--theme-border-radius);
+    }
+    ha-card .temp {
+      border-radius: 0px var(--theme-border-radius) 0px 0px ;
+    }
+    ha-card .city {
+      border-radius: var(--theme-border-radius) 0px 0px 0px ;
+    }
+    ha-card .face {
+      border-radius: 0px 0px 0px var(--theme-border-radius) ;
+    }
+
+  entities: 
+    - sensor.[[entity]]
+  air_pollution_level: '[[air_pollution_level]]'
+  air_quality_index: '[[air_quality_index]]'
+  main_pollutant: '[[main_pollutant]]'
+  temp: '[[temp]]'
+  city: '[[city]]'

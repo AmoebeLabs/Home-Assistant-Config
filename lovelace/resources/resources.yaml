@@ -1,0 +1,87 @@
+# AA
+- url: /community_plugin/air-visual-card/air-visual-card.js
+  type: js
+  
+# BB
+- url: /community_plugin/button-card/button-card.js
+  type: module  
+
+# CC
+- url: /community_plugin/calendar-card/calendar-card.js
+  type: js
+
+- url: /community_plugin/lovelace-card-loader/card-loader.js
+  type: js
+    
+- url: /community_plugin/lovelace-card-tools/card-tools.js
+  type: js
+
+- type: module
+  url: /community_plugin/lovelace-card-mod/card-mod.js
+
+- url: /community_plugin/check-button-card/check-button-card.js
+  type: module
+    
+- type: module
+  url: /community_plugin/circle-sensor-card/circle-sensor-card.js
+
+- type: module
+  url: /community_plugin/compact-custom-header/compact-custom-header.js
+
+# DD
+- type: module
+  url: /community_plugin/decluttering-card/decluttering-card.js
+
+- url: /community_plugin/deep-press/deep-press.js
+  type: module
+    
+- type: module
+  url: /community_plugin/dual-gauge-card/dual-gauge-card.js
+
+# LL
+- url: /community_plugin/light-entity-card/light-entity-card.js
+  type: js
+
+# MM
+- url: /community_plugin/lovelace-markdown-mod/markdown-mod.js
+  type: module
+    
+- type: module
+  url: /community_plugin/mini-graph-card/mini-graph-card.js
+
+- url: /community_plugin/monster-card/monster-card.js
+  type: js
+    
+# PP
+- url: /community_plugin/lovelace-popup-card/popup-card.js
+  type: js
+
+# SS
+- type: module
+  url: /community_plugin/simple-thermostat/simple-thermostat.js
+  
+- url: /community_plugin/simple-weather-card/simple-weather-card.js
+  type: module  
+
+- type: module
+  url: /community_plugin/lovelace-slider-entity-row/slider-entity-row.js
+
+- type: module
+  url: /community_plugin/surveillance-card/surveillance-card.js
+
+- url: /community_plugin/sun-card/sun-card.js
+  type: module
+
+- url: /community_plugin/lovelace-state-switch/state-switch.js
+  type: js
+    
+- type: module
+  url: /community_plugin/swipe-card/swipe-card.js
+
+# TT
+- type: module
+  url: /community_plugin/thermostat-card/thermostat-card.js?v=7
+
+# VV
+- url: /community_plugin/vertical-stack-in-card/vertical-stack-in-card.js
+  type: js
