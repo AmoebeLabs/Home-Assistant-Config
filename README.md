@@ -1,2 +1,2 @@
 # Home-Asistant-Config
-Partical Home Assistant configuration with themes, templates and views
+Partial Home Assistant configuration with themes, templates and views
