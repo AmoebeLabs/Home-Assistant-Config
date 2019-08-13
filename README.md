@@ -23,18 +23,18 @@ Based on the [Hemera 01](https://github.com/AmoebeLabs/Hemera_Theme-01-Orange_Bl
 
 ![1](https://github.com/AmoebeLabs/Hemera_Theme-01-Orange_Blue/blob/master/screenshots/hemera-01-examples01.png)
 
-![2](https://github.com/AmoebeLabs/Hemera_Theme-01-Orange_Blue/blob/master/screenshots/hemera-01-examples01.png)
+![2](https://github.com/AmoebeLabs/Hemera_Theme-01-Orange_Blue/blob/master/screenshots/hemera-01-examples02.png)
 
 ### Nyx 01 night theme
 Based on the [Nyx 01](https://github.com/AmoebeLabs/Nyx_Theme-01-Orange_Blue) black/orange/blue theme:
 
 ![1](https://github.com/AmoebeLabs/Nyx_Theme-01-Orange_Blue/blob/master/screenshots/nyx-01-examples01.png)
 
-![2](https://github.com/AmoebeLabs/Nyx_Theme-01-Orange_Blue/blob/master/screenshots/nyx-01-examples01.png)
+![2](https://github.com/AmoebeLabs/Nyx_Theme-01-Orange_Blue/blob/master/screenshots/nyx-01-examples02.png)
 
 ### Nyx 03 night theme
 And the fully Teal Green [Nyx 03](https://github.com/AmoebeLabs/Nyx_Theme-03-Teal_Teal) teal/teal/teal theme:
 
 ![1](https://github.com/AmoebeLabs/Nyx_Theme-03-Teal_Teal/blob/master/screenshots/nyx-03-examples01.png)
 
-![2](https://github.com/AmoebeLabs/Nyx_Theme-03-Teal_Teal/blob/master/screenshots/nyx-03-examples01.png)
+![2](https://github.com/AmoebeLabs/Nyx_Theme-03-Teal_Teal/blob/master/screenshots/nyx-03-examples02.png)
