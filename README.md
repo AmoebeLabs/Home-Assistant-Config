@@ -54,3 +54,5 @@ Hemera and Nyx, together with the layout are heavilly inspred by Apple's HomeKit
 - https://materializecss.com/color.html
 - https://material.io/design/color/#color-usage-palettes
 - https://material.io/design/color/dark-theme.html
+
+### And last last but not least: the 3 button topmenu by @jimzz
