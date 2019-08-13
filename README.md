@@ -44,13 +44,13 @@ And the fully Teal Green [Nyx 03](https://github.com/AmoebeLabs/Nyx_Theme-03-Tea
 Of course, I did not re-invent the wheel.
 Hemera and Nyx, together with the layout are heavilly inspred by Apple's HomeKit and the mighty HomeBridge UI.
 
-Homekit:
+### Homekit:
 ![](https://github.com/AmoebeLabs/Home-Assistant-Config/blob/master/inspiration/Inspired%20by%20Homekit.png)
 
-Homebridge:
+### Homebridge:
 ![](https://github.com/AmoebeLabs/Home-Assistant-Config/blob/master/inspiration/Inspired%20by%20Homebridge.png)
 
-Last but not least: Google's material design, inclusing design rules:
+### Last but not least: Google's material design, inclusing design rules:
 - https://materializecss.com/color.html
 - https://material.io/design/color/#color-usage-palettes
 - https://material.io/design/color/dark-theme.html
