@@ -1,0 +1,182 @@
+#
+# Template  : button-light-template-mw
+# Card:     : custom:button-card
+# Project   : Home Assistant
+# Repository: https://github.com/AmoebeLabs/Home-Assistant-Config
+#
+# Author    : Mars @ AmoebeLabs.com
+# 
+# License   : CC BY-SA, https://creativecommons.org/licenses/by/4.0/
+#
+# -----
+# Description:
+#   Decluttering template for the button card for light entities
+#   The light template shows:
+#   - the icon which changes color depending on the color of the light
+#   - the name of the entity 
+#   - the area (manually entered from the view/card)
+#   - the state of the light: On or Off in the lower left side
+#   - the percentage of the brightness in the lower right side.
+#     Nothing is displayed if the light doesn't have a brightness value.
+#
+#   Note:
+#   This template uses the Nyx and Hemera themes for settings!!
+#   You can find them in my repository ;-)
+#   
+#   References:
+#
+###############################################################################
+
+default:
+  - size: 40%
+  - lock: false
+  - color: auto
+  - spin: false
+  - show_state: true
+  - show_label: true
+  - tap_action: toggle
+  - hold_action: more-info
+  - aspect_ratio: 1/1
+  - area: ""
+
+
+card:
+  type: custom:button-card
+  name: '[[name]]'
+  deep_press: false
+  icon: 'mdi:[[icon]]'
+  size: '[[size]]'
+  color: '[[color]]'
+  lock: '[[lock]]'
+  aspect_ratio: '[[aspect_ratio]]'
+  entity: '[[entity]]'
+  show_state: '[[show_state]]'
+  show_label: '[[show_label]]'
+  show_last_changed: false
+  tap_action:
+    action: '[[tap_action]]'
+    haptic: light
+  hold_action:
+    action: '[[hold_action]]'
+    haptic: heavy
+  styles:
+    card:
+      - border-radius: var(--theme-border-radius)
+      - --ha-card-background: var(--theme-button-card-color-state-off)
+    grid:
+      # Define the grid with the icon, name, area, status and brightness (label)
+      - grid-template-areas: '"i i" "n n" "area area" "s l"'
+      - grid-template-columns: 1fr lfr
+      - grid-template-rows: 1fr min-content min-content min-content
+    img_cell:
+      - align-self: start
+      - text-align: start
+      - margin-right: 0px
+    name:
+      - font-family: Helvetica 
+      - font-size: 15px
+      - font-weight: bold
+      - text-transform: capitalize
+      - justify-self: start
+      - padding-left: 10px
+    custom_fields:
+      area:
+        - font-family: Helvetica 
+        - font-size: 13px
+        - text-transform: capitalize
+        - justify-self: start
+        - padding-left: 10px
+    state:
+      - font-family: Helvetica
+      - font-size: 12px
+      - font-weight: bold
+      - text-transform: capitalize
+      - padding: 0px 10px
+      - justify-self: start
+      - padding-left: 10px
+    label:
+      - font-family: Helvetica
+      - font-size: 12px
+      - font-weight: bold
+      - padding: 0px 10px
+      - justify-self: start
+
+  custom_fields:
+    area: '[[area]]'
+
+  label: >
+    [[[
+      if (typeof(entity) === 'undefined') return;
+      
+      if ('brightness' in entity.attributes)
+      {
+        if (entity.attributes
+        && (entity.attributes.brightness <= 255)) {
+          var bri = Math.round(entity.attributes.brightness / 2.55);
+          return (bri ? bri : '0') + '%';
+        }
+      }
+    ]]]
+
+  state:
+    - value: "on" 
+      spin: '[[spin]]'  
+      styles:
+        card:
+          - --ha-card-background: var(--theme-button-card-color-state-on)
+        lock:
+          - color: var(--theme-button-lock-color-state-on)
+        label:
+          - color: var(--theme-button-label-color-state-on)
+        name:
+          - color: var(--theme-button-name-color-state-on)
+        state:
+          - color: var(--theme-button-state-color-state-on)
+        custom_fields:
+          area:
+            - color: var(--theme-button-area-color-state-on)
+        
+    - value: "off"
+      styles:
+        card:
+          - --ha-card-background: var(--theme-button-card-color-state-off)
+        icon:
+          - color: var(--theme-button-icon-color-state-off)
+        lock:
+          - color: var(--theme-button-lock-color-state-off)
+        label:
+          - color: var(--theme-button-label-color-state-off)
+        name:
+          - color: var(--theme-button-name-color-state-off)
+        state:
+          - color: var(--theme-button-state-color-state-off)
+        custom_fields:
+          area:
+            - color: var(--theme-button-area-color-state-off)
+
+    - value: "unavailable"
+      styles:
+        card:
+          - --ha-card-background: var(--theme-button-card-color-state-unavailable)
+        icon:
+          - color: var(--theme-button-icon-color-state-unavailable)
+        name:
+          - color: var(--theme-button-name-color-state-unavailable)
+        state:
+          - color: var(--theme-button-state-color-state-unavailable)
+        lock:
+          - color: var(--theme-button-lock-color-state-unavailable)
+
+    - operator: 'default'
+      styles:
+        card:
+          - --ha-card-background: var(--theme-button-card-color-state-off)
+          - opacity: 0.7
+        icon:
+          - color: var(--theme-button-icon-color-state-off)
+        name:
+          - color: var(--theme-button-name-color-state-off)
+        state:
+          - color: var(--theme-button-state-color-state-off)
+        lock:
+          - color: var(--theme-button-lock-color-state-off)          
