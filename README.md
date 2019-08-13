@@ -13,8 +13,8 @@ It has built-in support for the following custom components:
 - The [custom thermostat card](https://github.com/ciotlosm/custom-lovelace/tree/master/thermostat-card)
 - The [custom simple weather card](https://github.com/kalkih/simple-weather-card)
 - The awesome [custom button card](https://github.com/custom-cards/button-card)
+- The great [custom mini graph card](https://github.com/kalkih/mini-graph-card)
 - The [custom air visual card](https://github.com/dnguyen800/air-visual-card)
-- The [simple weather card](https://github.com/kalkih/simple-weather-card)
 
 ## How does it look like?
 The below screenshots show some mobile examples of the day and night theme, and the custom components side by side.
