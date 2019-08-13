@@ -42,7 +42,7 @@ And the fully Teal Green [Nyx 03](https://github.com/AmoebeLabs/Nyx_Theme-03-Tea
 
 ## Inspired by...
 Of course, I did not re-invent the wheel.
-Hemera and Nyx, together with the layout are heavilly inspred by Apple's HomeKit and the mighty HomeBridge UI.
+Hemera and Nyx, together with the layout are heavilly inspred by Apple's HomeKit and the mighty [HomeBridge UI](https://www.npmjs.com/package/homebridge-config-ui-x#accessory-control).
 
 ### Homekit:
 ![](https://github.com/AmoebeLabs/Home-Assistant-Config/blob/master/inspiration/Inspired%20by%20Homekit.png)
