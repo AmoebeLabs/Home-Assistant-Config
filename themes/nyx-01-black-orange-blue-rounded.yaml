@@ -1,0 +1,349 @@
+#
+# Theme     : nyx-01-black-orange-blue-rounded.yaml
+# Project   : Home Assistant
+# Repository: https://github.com/AmoebeLabs/Styx_Theme-Orange_Blue
+#
+# Author    : Mars @ AmoebeLabs.com
+# 
+# License   : CC BY-SA, https://creativecommons.org/licenses/by/4.0/
+#
+# -----
+# Description:
+#   Nyx Night theme with primary orange and secondary blue colors.
+#   And with rounded corners for all cards
+#
+# Refs:
+#   - https://github.com/AmoebeLabs/Material-Design-Theme-Colors
+#   
+###############################################################################
+
+#
+# Define homekit alike border radius 
+
+theme-border-radius: '12px'
+
+#
+# Define theme colors 
+# Colors are defined in: https://github.com/AmoebeLabs/Material-Design-Theme-Colors
+
+#
+mdc-orange-lighten-5: '#FFF3E0'
+mdc-orange-lighten-4: '#FFE0B2'
+mdc-orange-lighten-3: '#FFCC80'
+mdc-orange-lighten-2: '#FFB74D'
+mdc-orange-lighten-1: '#FFA726'
+mdc-orange-base: '#FF9800'
+mdc-orange-darken-1: '#FB8C00'
+mdc-orange-darken-2: '#F57C00'
+mdc-orange-darken-3: '#EF6C00'
+mdc-orange-darken-4: '#E65100'
+mdc-orange-accent-1: '#FFD180'
+mdc-orange-accent-2: '#FFAB40'
+mdc-orange-accent-3: '#FF9100'
+mdc-orange-accent-4: '#FF6D00'
+
+mdc-blue-darken-1: '#1E88E5'
+mdc-blue-darken-2: '#1976D2'
+mdc-blue-darken-3: '#1565C0'
+mdc-blue-darken-4: '#0D47A1'
+
+mdc-light-blue-lighten-5:   '#E1F5FE'
+mdc-light-blue-lighten-4:  '#B3E5FC'
+mdc-light-blue-lighten-3:  '#81D4FA'
+mdc-light-blue-lighten-2:  '#4FC3F7'
+mdc-light-blue-lighten-1:  '#29B6F6'
+mdc-light-blue-darken-1:  '#039BE5'
+mdc-light-blue-darken-3:  '#0277BD'
+mdc-light-blue-darken-4:  '#01579B'
+
+mdc-grey-lighten-5:  '#FAFAFA'
+mdc-grey-lighten-4: '#F5F5F5'
+#md-grey-120: '#F3F3F3'
+#md-grey-150: '#F0F0F0'
+mdc-grey-lighten-3: '#EEEEEE'
+mdc-grey-lighten-2: '#E0E0E0'
+mdc-grey-lighten-1: '#BDBDBD'
+mdc-grey-base: '#9E9E9E'
+mdc-grey-darken-1: '#757575'
+mdc-grey-darken-2: '#616161'
+mdc-grey-darken-3: '#424242'
+mdc-grey-darken-3_5: '#303030'
+mdc-grey-darken-4: '#212121'
+mdc-grey-darken-4_5: '#111111'
+
+md-black: '#000000'
+md-white: '#FFFFFF'
+
+#
+# Theming for the custom:button-card 
+#
+#
+# Button card without a state (N/A)
+# - background is opaque white with 20% transparancy, so blends well with choosen dark background
+#   By using a transparent color instead of an opaque setting, the text remains readable!
+#
+
+theme-button-card-color-state-na:          'var(--paper-card-background-color)'
+theme-button-icon-color-state-na:          'var(--secondary-text-color)'
+theme-button-text-color-state-na:          'var(--mdc-grey-lighten-5)'
+theme-button-area-color-state-na:          'var(--mdc-grey-lighten-5)'
+theme-button-label-color-state-na:         'var(--mdc-grey-lighten-5)'
+theme-button-lock-color-state-na:          'var(--mdc-grey-lighten-5)'
+theme-button-name-color-state-na:          'var(--mdc-grey-lighten-5)'
+theme-button-state-color-state-na:         'var(--mdc-grey-lighten-5)'
+
+# Card with state = 'on'
+theme-button-card-color-state-on:          'rgba(255, 251, 239, 1.0)'
+theme-button-area-color-state-on:          'black'
+theme-button-icon-color-state-on:          'var(--mdc-orange-darken-4)'
+theme-button-label-color-state-on:         'var(--mdc-orange-darken-4)'
+theme-button-lock-color-state-on:          'black'
+theme-button-name-color-state-on:          'black'
+theme-button-state-color-state-on:         'var(--mdc-orange-darken-4)'
+
+# Card with state = 'off'
+theme-button-card-color-state-off:          'var(--paper-card-background-color)'
+theme-button-area-color-state-off:         'var(--mdc-grey-base)'
+theme-button-icon-color-state-off:         'var(--mdc-grey-base)'
+theme-button-label-color-state-off:        'var(--mdc-grey-base)'
+theme-button-lock-color-state-off:         'var(--mdc-grey-base)'
+theme-button-name-color-state-off:         'var(--mdc-grey-base)'
+theme-button-state-color-state-off:        'var(--mdc-grey-base)'
+
+# Card with fake state 'menu'. This is injected using a fake entity, input_select: ismenu, with an initial state of 'menu'
+theme-button-card-color-state-menu:  'rgba(255, 255, 255, 0.11)'
+theme-button-area-color-state-menu:  'var(--mdc-grey-lighten-5)'
+theme-button-icon-color-state-menu:  'var(--primary-color)'
+theme-button-label-color-state-menu: 'var(--mdc-grey-lighten-5)'
+theme-button-lock-color-state-menu:  'var(--mdc-grey-lighten-5)'
+theme-button-name-color-state-menu:  'var(--mdc-grey-lighten-5)'
+theme-button-state-color-state-menu: 'var(--mdc-grey-lighten-5)'
+
+theme-button-card-color-state-undefined:   'var(--paper-card-background-color)'
+theme-button-area-color-state-undefined:   'var(--mdc-grey-base)'
+theme-button-icon-color-state-undefined:   'var(--mdc-grey-base)'
+theme-button-label-color-state-undefined:  'var(--mdc-grey-base)'
+theme-button-lock-color-state-undefined:   'var(--mdc-grey-base)'
+theme-button-name-color-state-undefined:   'var(--mdc-grey-base)'
+theme-button-state-color-state-undefined:  'var(--mdc-grey-base)'
+
+theme-button-card-color-state-unavailable:   'var(--paper-card-background-color)'
+theme-button-area-color-state-unavailable:   'var(--mdc-grey-base)'
+theme-button-icon-color-state-unavailable:   'var(--mdc-grey-base)'
+theme-button-label-color-state-unavailable:  'var(--mdc-grey-base)'
+theme-button-lock-color-state-unavailable:   'var(--mdc-grey-base)'
+theme-button-name-color-state-unavailable:   'var(--mdc-grey-base)'
+theme-button-state-color-state-unavailable:  'var(--mdc-grey-base)'
+
+theme-button-card-color-state-idle:        'rgba(255, 251, 239, 0.7)'
+theme-button-area-color-state-idle:        'var(--mdc-grey-lighten-5)'
+theme-button-icon-color-state-idle:        'var(--mdc-grey-lighten-5)'
+theme-button-label-color-state-idle:       'var(--mdc-grey-lighten-5)'
+theme-button-lock-color-state-idle:        'var(--mdc-grey-lighten-5)'
+theme-button-name-color-state-idle:        'var(--mdc-grey-lighten-5)'
+theme-button-state-color-state-idle:       'var(--mdc-grey-lighten-5)'
+
+# Card with alarm state 'pending'
+theme-button-card-color-state-pending:     'rgba(255, 251, 239, 1.0)'
+theme-button-area-color-state-pending:     'black'
+theme-button-icon-color-state-pending:     'red'
+theme-button-icon-animation-state-pending: 'blink 1s ease infinite'
+theme-button-label-color-state-pending:    'var(--mdc-orange-darken-4)'
+theme-button-lock-color-state-pending:     'black'
+theme-button-name-color-state-pending:     'black'
+theme-button-state-color-state-pending:    'var(--mdc-orange-darken-4)'
+
+# Card with alarm state 'disarmed'
+#theme-button-card-color-state-disarmed:    'rgba(255, 251, 239, .2)'
+theme-button-card-color-state-disarmed:    'var(--paper-card-background-color)'
+theme-button-area-color-state-disarmed:    'var(--mdc-grey-base)'
+theme-button-icon-color-state-disarmed:    'green'
+theme-button-label-color-state-disarmed:   'var(--mdc-grey-base)'
+theme-button-lock-color-state-disarmed:    'var(--mdc-grey-base)'
+theme-button-name-color-state-disarmed:    'var(--mdc-grey-base)'
+theme-button-state-color-state-disarmed:   'var(--mdc-grey-base)'
+
+# Card with alarm state 'armed_home'
+theme-button-card-color-state-armed_home:  'rgba(255, 251, 239, 1.0)'
+theme-button-area-color-state-armed_home:  'black'
+theme-button-icon-color-state-armed_home:  'red'
+theme-button-icon-animation-state-armed_home: 'blink 2s ease infinite'
+theme-button-label-color-state-armed_home: 'var(--mdc-orange-darken-4)'
+theme-button-lock-color-state-armed_home:  'black'
+theme-button-name-color-state-armed_home:  'black'
+theme-button-state-color-state-armed_home: 'var(--mdc-orange-darken-4)'
+
+# Card with alarm state 'armed_away'
+theme-button-card-color-state-armed_away:  'rgba(255, 251, 239, 1.0)'
+theme-button-area-color-state-armed_away:  'black'
+theme-button-icon-color-state-armed_away:  'red'
+theme-button-icon-animation-state-armed_away: 'blink 2s ease infinite'
+theme-button-label-color-state-armed_away: 'var(--mdc-orange-darken-4)'
+theme-button-lock-color-state-armed_away:  'black'
+theme-button-name-color-state-armed_away:  'black'
+theme-button-state-color-state-armed_away: 'var(--mdc-orange-darken-4)'
+
+#
+# Theming for the custom:mini-graph-card
+#
+
+theme-graph-card-color: 'var(--paper-card-background-color)'
+theme-graph-icon-color: 'var(--secondary-text-color)'
+theme-graph-text-color: 'var(--mdc-grey-lighten-5)'
+
+## custom:thermostat-card settings
+#
+theme-thermostat-text-color: 'var(--primary-text-color)'
+theme-thermostat-off-fill: 'var(--primary-background-color)'
+theme-thermostat-cool-fill: '#007AF1'
+theme-thermostat-heat-fill: '#E36304'
+theme-thermostat-path-color: 'rgba(255,255,255, 0.3)'
+theme-thermostat-path-active-color: 'rgba(255,255,255, 0.8)'
+theme-thermostat-path-active-color-large: 'rgba(255,255,255, 1.0)'
+theme-thermostat-path-heat-color: 'rgba(255,255,255,0.4)'
+
+#
+# Theming for custom:simple-weather-card
+
+theme-weather-day-color:   'var(--paper-card-background-color)'
+theme-weather-night-color: 'var(--paper-card-background-color)'
+theme-weather-text-color:  'var(--mdc-grey-lighten-5)'
+
+weather-day: 'rgb(255, 251, 239)'
+weather-night: 'rgb(255, 251, 239)'
+weather-color: black
+upcoming-color: black
+
+##
+# Main colors of Home Assistant
+
+# Base colors...
+primary-color: 'var(--mdc-orange-darken-2)'
+accent-color: 'var(--mdc-orange-accent-1)'
+dark-primary-color: 'var(--mdc-orange-darken-4)'
+light-primary-color: 'var(--mdc-orange-lighten-3)'
+
+# Text colors
+primary-text-color: 'var(--md-white)'
+text-primary-color: 'var(--primary-text-color)'
+secondary-text-color: 'var(--mdc-light-blue-lighten-3)'
+disabled-text-color: 'var(--mdc-grey-darken-1)'
+label-badge-border-color: 'var(--mdc-light-blue-lighten-3)'
+
+# Sidebar
+sidebar-icon-color: 'var(--mdc-grey-lighten-1)'
+
+## Notes on Backgrounds
+#
+# Elevation Level White Overlay Transparency
+# 00dp  0% --> primary-background-color
+# 01dp  5%
+# 02dp  7% --> paper-card-background-color 
+# 03dp  8%
+# 04dp  9% --> paper-dialog-background-color
+# 06dp  11%
+# 08dp  12%
+# 12dp  14%
+# 16dp  15%
+# 24dp  16%
+
+
+# Background colors
+# Primary is background, secondary is for menu
+primary-background-color: 'var(--mdc-grey-darken-4_5)'
+secondary-background-color: 'var(--mdc-grey-lighten-5)'
+#secondary-background-color: 'var(--mdc-grey-darken-2)'
+divider-color: 'rgba(0, 0, 0, .12)'
+table-row-background-color: 'var(--mdc-grey-darken-3_5)'
+table-row-alternative-background-color: 'var(--mdc-grey-darken-3_5)'
+
+# Nav Menu
+# Nav Menu background is listbox-background-color. A bit lighter than the primary background
+paper-listbox-color: 'var(--mdc-grey-darken-1)'
+paper-listbox-background-color: 'var(--mdc-grey-darken-4)'
+paper-grey-50: 'var(--primary-text-color)'
+paper-grey-200: 'var(--mdc-grey-darken-4)'
+
+# Paper card
+# Colors for the ha-cards
+# Paper card background color is on primary-background-color
+paper-card-header-color: 'var(--light-primary-color)'
+
+# Set to 02dp - 7% of primary-background-color
+# Primary is set to mdc-grey-darken-4, ie rgb(13, 13, 13).
+# Assumption is that paper-card is ALWAYS on primary background.
+
+paper-card-background-color: 'rgba(255, 255, 255, 0.07)'
+
+# Used to be fixed:
+#paper-card-background-color: 'var(--mdc-grey-darken-3)'
+
+# primary dark in rgb is (90, 32, 0)
+# primary light in rgb is (255, 204, 128)
+# paper-card-background-color: 'rgba(255,204, 128, 0.08)'
+
+# Used to be fixed:
+#paper-dialog-background-color: 'var(--mdc-grey-darken-2)'
+paper-dialog-background-color: 'rgba(255, 255, 255, 0.09)'
+
+paper-item-icon-color: 'var(--primary-text-color)'
+paper-item-icon-active-color: 'var(--primary-color)'
+paper-item-icon_-_color: 'var(--secondary-text-color)'
+paper-item-selected_-_background-color: 'var(--mdc-grey-darken-2)'
+paper-tabs-selection-bar-color: 'var(--secondary-text-color)'
+
+# Labels
+label-badge-red: 'var(--primary-color)'
+label-badge-text-color: 'var(--primary-text-color)'
+label-badge-background-color: 'var(--mdc-grey-darken-4)'
+
+# Switches
+paper-toggle-button-checked-button-color: 'var(--light-primary-color)'
+paper-toggle-button-checked-bar-color: 'var(--light-primary-color)'
+paper-toggle-button-checked-ink-color: 'var(--light-primary-color)'
+paper-toggle-button-unchecked-button-color: 'var(--disabled-text-color)'
+paper-toggle-button-unchecked-bar-color: 'var(--disabled-text-color)'
+paper-toggle-button-unchecked-ink-color: 'var(--disabled-text-color)'
+
+# Sliders
+paper-slider-knob-color: 'var(--light-primary-color)'
+paper-slider-knob-start-color: 'var(--light-primary-color)'
+paper-slider-pin-color: 'var(--light-primary-color)'
+paper-slider-active-color: 'var(--light-primary-color)'
+paper-slider-container-color: 'linear-gradient(var(--primary-background-color), var(--secondary-background-color)) no-repeat'
+paper-slider-secondary-color: 'var(--secondary-background-color)'
+paper-slider-disabled-active-color: 'var(--disabled-text-color)'
+paper-slider-disabled-secondary-color: 'var(--disabled-text-color)'
+
+# Google colors
+google-red-500: 'var(--dark-primary-color)'
+google-green-500: 'var(--light-primary-color)'
+
+#Changes to fix history/logbook menus
+lumo-primary-text-color: 'var(--light-primary-color)'
+lumo-secondary-text-color: 'var(--light-primary-color)'
+lumo-primary-color: 'var(--light-primary-color)'
+
+#Calendar day numbers
+lumo-body-text-color: 'var(--light-primary-color)'
+
+#Calendar/Date-Picker Background
+lumo-base-color: 'var(--mdc-grey-darken-4)'
+
+#Month/Year header
+lumo-header-text-color: 'var(--lumo-body-text-color)'
+
+#DayOfWeek Header
+lumo-tertiary-text-color: 'var(--lumo-body-text-color)'
+lumo-shade: 'var(--mdc-grey-darken-4)'
+lumo-shade-90pct: 'rgba(34, 34, 34, .9)'
+lumo-shade-80pct: 'rgba(34, 34, 34, .8)'
+lumo-shade-70pct: 'rgba(34, 34, 34, .7)'
+lumo-shade-60pct: 'rgba(34, 34, 34, .6)'
+lumo-shade-50pct: 'rgba(34, 34, 34, .5)'
+lumo-shade-40pct: 'rgba(34, 34, 34, .4)'
+lumo-shade-30pct: 'rgba(34, 34, 34, .3)'
+lumo-shade-20pct: 'rgba(34, 34, 34, .2)'
+lumo-shade-10pct: 'rgba(34, 34, 34, .1)'
+lumo-shade-5pct: 'rgba(34, 34, 34, .05)'
+lumo-tint-5pct: 'var(--mdc-grey-darken-4)'
