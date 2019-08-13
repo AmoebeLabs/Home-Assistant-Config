@@ -14,6 +14,7 @@ It has built-in support for the following custom components:
 - The [custom simple weather card](https://github.com/kalkih/simple-weather-card)
 - The awesome [custom button card](https://github.com/custom-cards/button-card)
 - The [custom air visual card](https://github.com/dnguyen800/air-visual-card)
+- The [simple weather card](https://github.com/kalkih/simple-weather-card)
 
 ## How does it look like?
 The below screenshots show some mobile examples of the day and night theme, and the custom components side by side.
@@ -38,3 +39,18 @@ And the fully Teal Green [Nyx 03](https://github.com/AmoebeLabs/Nyx_Theme-03-Tea
 ![1](https://github.com/AmoebeLabs/Nyx_Theme-03-Teal_Teal/blob/master/screenshots/nyx-03-examples01.png)
 
 ![2](https://github.com/AmoebeLabs/Nyx_Theme-03-Teal_Teal/blob/master/screenshots/nyx-03-examples02.png)
+
+## Inspired by...
+Of course, I did not re-invent the wheel.
+Hemera and Nyx, together with the layout are heavilly inspred by Apple's HomeKit and the mighty HomeBridge UI.
+
+Homekit:
+![](https://github.com/AmoebeLabs/Home-Assistant-Config/blob/master/inspiration/Inspired%20by%20Homekit.png)
+
+Homebridge:
+![](https://github.com/AmoebeLabs/Home-Assistant-Config/blob/master/inspiration/Inspired%20by%20Homebridge.png)
+
+Last but not least: Google's material design, inclusing design rules:
+- https://materializecss.com/color.html
+- https://material.io/design/color/#color-usage-palettes
+- https://material.io/design/color/dark-theme.html
